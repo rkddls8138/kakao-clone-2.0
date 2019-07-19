@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- font awesome import -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
+    />
+    <title>Chat | kakao Clone</title>
+  </head>
+
+  <body>
+    <!-- status=bar div -->
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span class="status-bar__clock">13:54</span>
+      </div>
+      <div class="status-bar__column"></div>
+      <i class="fas fa-clock"></i>
+      <i class="fas fa-volume-mute"></i>
+      <i class="fas fa-wifi"></i>
+      <span class="status-bar__bettery-level">100%</span>
+      <i class="fas fa-battery-full"></i>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+      <div class="header__header-column">
+        <div class="header__back__back-btn">
+          <a href="index.html">
+            <i class="fas fa-arrow-left fa-2x"></i>
+          </a>
+        </div>
+        <h1 class="header__title">Best Friend(친한친구)</h1>
+      </div>
+      <div class="header__header-column">
+        <span class="haader__icon">
+          <i class="fas fa-search"></i>
+        </span>
+        <div class="header__icon">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </header>
+    <main class="chat">
+      <ul class="chat__messages">
+        <span class="chat__timestamp">Fridat, july 19, 2019</span>
+        <li class="incoming-message message">
+          <img src="images/정해인.jpg" class="g-avatar message__avatar" />
+          <div class="message__content">
+            <span class="message__author">정해인</span>
+            <div class="message__buble">
+              안녕~
+            </div>
+          </div>
+          <span class="message__timestamp"></span>
+        </li>
+        <li class="incoming-message message">
+          <div class="message__content">
+            <span class="message__timestamp"></span>
+            <div class="message__buble">
+              안녕~
+            </div>
+          </div>
+        </li>
+      </ul>
+    </main>
+    <div class="chat__write">
+      <div class="chat__write-column">
+        <i class="far fa-plus-square"></i>
+      </div>
+      <div class="chat__write-column">
+        <input
+          type="text"
+          placeholder="Send message"
+          class="chat__write-icon"
+        />
+      </div>
+      <div class="chat__write-column">
+        <span class="chat__write-icon">
+          <i class="far fa-smile-wink"></i>
+        </span>
+        <span class="chat__write-icon">
+          <i class="fas fa-microphone"></i>
+        </span>
+      </div>
+    </div>
+  </body>
+</html>
