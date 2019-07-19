@@ -1,73 +1,144 @@
 <!DOCTYPE html>
+
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- font awesome import -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
-    />
-    <title>More | kakao Clone</title>
-  </head>
 
-  <body>
-    <!-- status=bar div -->
-    <div class="status-bar">
-      <div class="status-bar__column">
-        <span class="status-bar__clock">13:54</span>
-      </div>
-      <div class="status-bar__column"></div>
-      <i class="fas fa-clock"></i>
-      <i class="fas fa-volume-mute"></i>
-      <i class="fas fa-wifi"></i>
-      <span class="status-bar__bettery-level">100%</span>
-      <i class="fas fa-battery-full"></i>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!-- font awesome import -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" />
+  <title>More | kakao Clone</title>
+</head>
+
+<body>
+
+  <!-- status=bar div -->
+  <div class="status-bar">
+    <div class="status-bar__column">
+      <span class="status-bar__clock">13:54</span>
     </div>
+    <div class="status-bar__column"></div>
+    <i class="fas fa-clock"></i>
+    <i class="fas fa-volume-mute"></i>
+    <i class="fas fa-wifi"></i>
+    <span class="status-bar__bettery-level">100%</span>
+    <i class="fas fa-battery-full"></i>
+  </div>
 
-    <!-- Header -->
-    <header class="header">
-      <div class="header__header-column">
-        <h1 class="header__title">More(더보기)</h1>
-      </div>
-      <div class="header__header-column">
-        <span class="haader__icon">
-          <i class="fas fa-search"></i>
-        </span>
-        <span class="haader__icon">
-          <i class="fas fa-qrcode"></i>
-        </span>
-        <span class="haader__icon">
-          <i class="fas fa-cog"></i>
-        </span>
-      </div>
-    </header>
+  <!-- Header -->
+  <header class="header">
+    <div class="header__header-column">
+      <h1 class="header__title">More(더보기)</h1>
+    </div>
+    <div class="header__header-column">
+      <span class="haader__icon">
+        <i class="fas fa-search"></i>
+      </span>
+      <span class="haader__icon">
+        <i class="fas fa-qrcode"></i>
+      </span>
+      <span class="haader__icon">
+        <i class="fas fa-cog"></i>
+      </span>
+    </div>
+  </header>
 
-    <!-- Navigation -->
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__list-item">
-          <a href="friend.html" class="nav__list-link">
-            <i class="far fa-user"></i>
-          </a>
+  <main class="more">
+    <header class="more_header">
+      <div class="friends__friend friend parent friend--lg">
+        <div class="friend__column">
+          <img src="images/정해인.jpg" class="g-avatar friend__avatar" />
+          <div class="friend__content">
+            <span class="friend__name">
+              정해인
+            </span>
+            <span class="friend__status">
+              hij@gmail.com
+            </span>
+          </div>
+        </div>
+        <div class="friend__column">
+          <i class="far fa-comment-alt fa-2x"></i>
+        </div>
+      </div>
+      </div>
+      <ul class="more__btn-list">
+        <li class="more__btn">
+          <span class="more__btn-icon">
+            <i class="far fa-smile fa-2x"></i>
+          </span>
+          <span class="more__btn-title">
+            Emoticons
+          </span>
         </li>
-        <li class="nav__list-item">
-          <a href="index.html" class="nav__list-link">
-            <i class="far fa-comment"></i>
-          </a>
+        <li class="more__btn">
+          <span class="more__btn-icon">
+            <i class="fas fa-brush fa-2x"></i>
+          </span>
+          <span class="more__btn-title">
+            Themes
+          </span>
         </li>
-        <li class="nav__list-item">
-          <a href="find.html" class="nav__list-link">
-            <i class="fas fa-search"></i>
-          </a>
-        </li>
-        <li class="nav__list-item">
-          <a href="more.html" class="nav__list-link">
-            <i class="fas fa-ellipsis-h"></i
-          ></a>
+        <li class="more__btn">
+          <span class="more__btn-icon">
+            <i class="fab fa-kickstarter-k fa-2x"></i>
+          </span>
+          <span class="more__btn-title">
+            Account
+          </span>
         </li>
       </ul>
-    </nav>
-  </body>
+    </header>
+    <section class="more__suggestions">
+      <h5 class="more_title">suggestion</h5>
+      <ul class="more_suggestions-list">
+        <li class="more__suggestion suggestion">
+          <span class="suggestion__icon">
+            <i class="fas fa-quote-right fa-2x"></i>
+          </span>
+          <span class="suggestion__title">Kakao Story</span>
+        </li>
+        <li class="more__suggestion suggestion">
+          <i class="fas fa-beer fa-2x"></i>
+          </span>
+          <span class="suggestion__title">Kakao friend</span>
+        </li>
+        <li class="more__suggestion suggestion">
+          <span class="suggestion__icon">
+            <i class="fas fa-gamepad fa-2x"></i>
+          </span>
+          <span class="suggestion__title">Friends Gem</span>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <ul class="nav__list">
+      <li class="nav__list-item">
+        <a href="friend.html" class="nav__list-link">
+          <i class="far fa-user"></i>
+        </a>
+      </li>
+      <li class="nav__list-item">
+        <a href="index.html" class="nav__list-link">
+          <i class="far fa-comment"></i>
+        </a>
+      </li>
+      <li class="nav__list-item">
+        <a href="find.html" class="nav__list-link">
+          <i class="fas fa-search"></i>
+        </a>
+      </li>
+      <li class="nav__list-item">
+        <a href="more.html" class="nav__list-link">
+          <i class="fas fa-ellipsis-h"></i></a>
+      </li>
+    </ul>
+  </nav>
+
+</body>
+
 </html>
