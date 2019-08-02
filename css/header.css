@@ -16,9 +16,10 @@
   cursor: pointer;
 }
 
-.header .header__column {
+.header .header__header-column {
   display: flex;
   align-items: center;
+  margin-top: 30px;
 }
 
 .header .header__back-btn {

@@ -5,6 +5,10 @@
 @import "nav-bar.css";
 @import "friend.css";
 
+body {
+  height: 100000px;
+}
+
 * {
   box-sizing: border-box;
 }
